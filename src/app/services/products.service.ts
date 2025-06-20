@@ -23,7 +23,7 @@ export class ProductsService {
 
   getAll(): Promise<Product[]> {
     return firstValueFrom(
-      this.httpClient.get<Product[]>('https://6662036463e6a0189fec7284.mockapi.io/products')
+      this.httpClient.get<Product[]>('https://684b4a52165d05c5d35c11bd.mockapi.io/AppRaptorGym')
     )
   }
 
