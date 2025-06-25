@@ -1,0 +1,40 @@
+.contacto-formulario {
+  --ion-background-color: #3c3d3d;
+  --ion-background-color: ;
+  --ion-text-color: #000;
+
+  ion-card {
+    background: #62ccea;
+    color: #000;
+  }
+
+  ion-card-title {
+    color: #000;
+  }
+
+  ion-item {
+    --background: transparent;
+    --color: #000;
+  }
+
+  ion-label {
+    color: #000;
+    font-weight: bold;
+  }
+
+  ion-input,
+  ion-textarea {
+    --color: #000;
+  }
+
+  // ✔️ Este es el truco para afectar solo ese botón
+  .boton-formulario::part(native) {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  .info-tienda p,
+  .info-tienda strong {
+    color: #000;
+  }
+}
