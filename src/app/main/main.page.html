@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true"> 
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button menu="m1"></ion-menu-button>
@@ -8,10 +8,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Raptor Gym</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-button [routerLink]="['/product-list']">Productos</ion-button>
+  <div class="banner-container">
+    <img src="assets/img/Banner.png" alt="Banner de bienvenida" class="banner-image">
+  </div>
+
+  <div class="welcome-container">
+    <h1>¡Bienvenido a Raptor Gym!</h1>
+    <ion-button class="welcome-button" [routerLink]="['/product-list']">Ver productos</ion-button>
+  </div>
 </ion-content>
